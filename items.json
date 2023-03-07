@@ -1,0 +1,334 @@
+{
+    "movies": [
+        {
+            "id": 1,
+            "name": "Avatar",
+            "price": 1500,
+            "imgName": "avatar.jpg"
+        },
+
+        {
+            "id": 2,
+            "name": "Black Adam",
+            "price": 1500,
+            "imgName": "black adam.jpg"
+        },
+
+        {
+            "id": 3,
+            "name": "Dune",
+            "price": 1500,
+            "imgName": "dune.jpg"
+        },
+
+        {
+            "id": 4,
+            "name": "Barbarian",
+            "price": 1500,
+            "imgName": "barbarian.jpg"
+        },
+
+        {
+            "id": 5,
+            "name": "Blank",
+            "price": 1500,
+            "imgName": "blank.jpg"
+        },
+
+        {
+            "id": 6,
+            "name": "Hunt",
+            "price": 1500,
+            "imgName": "hunt.jpg"
+        },
+
+        {
+            "id": 7,
+            "name": "Jigsaw 2017",
+            "price": 1500,
+            "imgName": "jigsaw-2017.jpg"
+        },
+
+        {
+            "id": 8,
+            "name": "Batman 2022",
+            "price": 2199,
+            "imgName": "batman-2022.jpg"
+        },
+
+        {
+            "id": 9,
+            "name": "Empire of light",
+            "price": 1500,
+            "imgName": "empire_of_light.jpg"
+        },
+
+        {
+            "id": 10,
+            "name": "Babylon",
+            "price": 1500,
+            "imgName": "babylon.jpg"
+        },
+
+        {
+            "id": 11,
+            "name": "John Wick: Chapter-2",
+            "price": 1500,
+            "imgName": "john-wick-2.jpg"
+        },
+
+        {
+            "id": 12,
+            "name": "Black Panther: Wakanda forever",
+            "price": 1500,
+            "imgName": "black_panther_wakanda_forever.jpg"
+        },
+
+        {
+            "id": 13,
+            "name": "Joker",
+            "price": 1500,
+            "imgName": "joker.jpg"
+        },
+
+        {
+            "id": 14,
+            "name": "The Lord Of The Rings: The fellowship of the ring",
+            "price": 1500,
+            "imgName": "lord of the rings the fellowship of the ring.jpg"
+        },
+
+        {
+            "id": 15,
+            "name": "The Lord Of The Rings: The return of the king",
+            "price": 1500,
+            "imgName": "lord_of_the_rings_the_return_of_the_king.jpg"
+        },
+
+        {
+            "id": 16,
+            "name": "The Lord Of The Rings: The two towers",
+            "price": 1500,
+            "imgName": "lord_of_the_rings_the_two_towers.jpg"
+        },
+
+        {
+            "id": 17,
+            "name": "Minions: The rise of Gru",
+            "price": 1500,
+            "imgName": "minions-the-rise-of-gru.jpg"
+        },
+
+        {
+            "id": 18,
+            "name": "Mr. Harrigan's phone",
+            "price": 1500,
+            "imgName": "mr_harrigans_phone.jpg"
+        },
+
+        {
+            "id": 19,
+            "name": "My fathers dragon",
+            "price": 1500,
+            "imgName": "my_fathers_dragon.jpg"
+        },
+
+        {
+            "id": 20,
+            "name": "Old Man",
+            "price": 1500,
+            "imgName": "old_man.jpg"
+        },
+
+        {
+            "id": 21,
+            "name": "Peter Pan and Wendy",
+            "price": 1500,
+            "imgName": "peter_pan_and_wendy.jpg"
+        },
+
+        {
+            "id": 22,
+            "name": "Rogue One",
+            "price": 1500,
+            "imgName": "rogue_one_a_star_wars_story.jpg"
+        },
+
+        {
+            "id": 23,
+            "name": "Smile",
+            "price": 1500,
+            "imgName": "smile.jpg"
+        },
+
+        {
+            "id": 24,
+            "name": "Star Wars: Episode 1",
+            "price": 1500,
+            "imgName": "star_wars_episode_one_the_phantom_menace.jpg"
+        },
+
+        {
+            "id": 25,
+            "name": "Star Wars: Episode 3",
+            "price": 1500,
+            "imgName": "star_wars_episode_three_revenge_of_the_sith.jpg"
+        },
+
+        {
+            "id": 26,
+            "name": "Star Wars: Episode 2",
+            "price": 1500,
+            "imgName": "star_wars_episode_two_attack_of_the_clones.jpg"
+        },
+
+        {
+            "id": 27,
+            "name": "Troll",
+            "price": 1500,
+            "imgName": "troll.jpg"
+        },
+
+        {
+            "id": 28,
+            "name": "White Noise",
+            "price": 1500,
+            "imgName": "white_noise.jpg"
+        },
+
+        {
+            "id": 29,
+            "name": "Amsterdam",
+            "price": 1500,
+            "imgName": "amsterdam.jpg"
+        },
+
+        {
+            "id": 30,
+            "name": "Strange World",
+            "price": 1500,
+            "imgName": "strange_world.jpg"
+        },
+
+        {
+            "id": 31,
+            "name": "Mickey: The Story Of A Mouse",
+            "price": 1500,
+            "imgName": "mickey_the_story_of_a_mouse.jpg"
+        },
+
+        {
+            "id": 32,
+            "name": "Stranger",
+            "price": 1500,
+            "imgName": "stranger.jpg"
+        }
+    ],
+
+    "popular": [
+        {
+            "id": 3,
+            "name": "Dune",
+            "price": 1500,
+            "imgName": "dune.jpg"
+        },
+
+        {
+            "id": 8,
+            "name": "Batman 2022",
+            "price": 2199,
+            "imgName": "batman-2022.jpg"
+        },
+
+        {
+            "id": 1,
+            "name": "Avatar",
+            "price": 1500,
+            "imgName": "avatar.jpg"
+        },
+
+        {
+            "id": 2,
+            "name": "Black Adam",
+            "price": 1500,
+            "imgName": "black adam.jpg"
+        },
+
+        {
+            "id": 12,
+            "name": "Black Panther: Wakanda forever",
+            "price": 1500,
+            "imgName": "black_panther_wakanda_forever.jpg"
+        },
+
+        {
+            "id": 23,
+            "name": "Smile",
+            "price": 1500,
+            "imgName": "smile.jpg"
+        },
+
+        {
+            "id": 10,
+            "name": "Babylon",
+            "price": 1500,
+            "imgName": "babylon.jpg"
+        },
+
+        {
+            "id": 29,
+            "name": "Amsterdam",
+            "price": 1500,
+            "imgName": "amsterdam.jpg"
+        },
+
+        {
+            "id": 31,
+            "name": "Mickey: The Story Of A Mouse",
+            "price": 1500,
+            "imgName": "mickey_the_story_of_a_mouse.jpg"
+        },
+
+        {
+            "id": 25,
+            "name": "Star Wars: Episode 3",
+            "price": 1500,
+            "imgName": "star_wars_episode_three_revenge_of_the_sith.jpg"
+        },
+
+        {
+            "id": 14,
+            "name": "The Lord Of The Rings: The fellowship of the ring",
+            "price": 1500,
+            "imgName": "lord of the rings the fellowship of the ring.jpg"
+        },
+
+        {
+            "id": 27,
+            "name": "Troll",
+            "price": 1500,
+            "imgName": "troll.jpg"
+        },
+
+        {
+            "id": 28,
+            "name": "White Noise",
+            "price": 1500,
+            "imgName": "white_noise.jpg"
+        },
+
+        {
+            "id": 20,
+            "name": "Old Man",
+            "price": 1500,
+            "imgName": "old_man.jpg"
+        },
+
+        {
+            "id": 30,
+            "name": "Strange World",
+            "price": 1500,
+            "imgName": "strange_world.jpg"
+        }
+    ]
+}

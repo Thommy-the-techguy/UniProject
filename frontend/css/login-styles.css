@@ -1,0 +1,83 @@
+main {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 3px 3px 5px 1px;
+    border-radius: 20px;
+    height: 700px;
+    width: 900px;
+    top: 2vw;
+    left: 20vw;
+}
+
+main .login-form-wrap {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    margin-right: 40px;
+}
+
+.login-form-wrap .btn {
+    width: 150px;
+}
+
+main .login-form-wrap .mb-3 {
+    height: 100px;
+}
+
+.password-control {
+	position: absolute;
+	top: 352px;
+	right: 157px;
+}
+
+.password-control img {
+    height: 20px;
+    width: 20px;
+}
+
+.password-control.view img {
+	content: url("../images/hidden.png");
+}
+
+.mb-3 .form-control {
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.login-sign {
+    position: absolute;
+    top: 100px;
+    right:209px;
+    height: 60px;
+    font-size: 40px;
+    font-family: 'Arial Black', 'Arial Narrow', Arial, sans-serif;
+}
+
+.movie-set-image {
+    width: 526px;
+    height: 317px;
+}
+
+.create-account-link {
+    position: absolute;
+    top: 520px;
+    left: 240px;
+}
+
+.create-account-link a {
+    text-decoration: underline;
+    color: gray;
+}
+
+.create-account-link a:visited {
+    color: gray;
+}
+
+.create-account-link a:hover {
+    color: rgb(163, 163, 163);
+}

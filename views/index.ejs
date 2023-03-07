@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KinoMann</title>
+
+        <!--Кодировка-->
+        <meta charset="utf-8"/>
+
+        <!--Язык документа-->
+        <html lang="ru"></html>
+        
+        <meta name="author" content="Artyom Chizhik"/>
+        <meta name="description" content="Best movies for best price"/>
+        
+        <!--Адаптивная разметка-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no shrink-to-fit=no"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="MobileOptimized" content="width"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/> 
+
+        <!--Иконка сайта-->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png"/>
+
+        <link rel="stylesheet" href="./css/style.css"/>
+
+        <!--Шрифт заголовка-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+
+        <!--Шрифт основной-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet"> 
+
+        <script src="https://checkout.stripe.com/checkout.js " defer></script>
+        <script>
+            let stripePublicKey = '<%= stripePublicKey %>'
+        </script>
+        <script src="scripts/purchase.js" defer></script>
+    </head>
+
+    <body>
+
+        <header id="navbar">
+            <div class="logo">
+                <a href="/">KinoMann</a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#MainInfo">Главное</a></li>
+                    <li><a href="#Store">Магазин</a></li>
+                    <li><a href="#About">О нас</a></li>
+                    <li><a href="login.html">Выйти</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="MainInfo">
+            <h1 class="headerText">Всегда есть что посмотреть</h1>
+            <p class="mainText">Тысячи фильмов на вечер. В хорошем качестве, с любимой озвучкой или в оригинале.</p>
+        </section>
+
+        <section id="Store">
+            <section class="popular">
+                <p>Популярное</p>
+                <button class="pre-btn"><img src="images/arrow.png"/></button>
+                <button class="nxt-btn"><img src="images/arrow.png"/></button>  
+                
+                <div class="product-container">
+                    <% for(let i=0; i<12; i++){ %> 
+                        <div class="product-card" data-item-id="<%= sampleData[i].id %>">
+                            <div class="product-image">
+                                <span class="discount-tag">50% off</span>
+                                <img src="images/<%= sampleData[i].imgName %>" class="product-thumb" alt="<%= sampleData[i].name %>"/>
+                                <button class="card-btn">Приобрести</button>
+                            </div>
+
+                            <div class="product-info">
+                                <span class="price">$<%= sampleData[i].price / 100 %> </span><span class="actual-price">30$</span>
+                            </div>
+                        </div>
+                    <% } %> 
+                </div>
+
+            </section>
+            
+            <!--Основной ассортимент товаров-->>
+            <section class="main">
+                <p>Весь ассортимент</p>
+                <div class="mainRangeContainer">
+                    <div class="movies">
+                        <% sampleData.forEach(function(data){ %> 
+                            <div class="product-card" data-item-id="<%= data.id %>">
+                                <div class="product-image">
+                                    <span class="discount-tag">50% off</span>
+                                    <img src="images/<%= data.imgName %> " class="product-thumb" alt="<%= data.name %>"/>
+                                    <button class="card-btn">Приобрести</button>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="price">$<%= data.price / 100 %> </span><span class="actual-price">30$</span>
+                                </div>
+                            </div>
+                        <% }) %> 
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <footer id="About">
+            <div class="footer-wrap">
+                
+                <div class="copyright-wrap">
+                    <span class="copyright">© 2022, </span><a class="copyright-brand" href="/">KinoMann</a><span class="age">18+</span>
+                </div>
+
+                <div class="footer-logo-wrap">
+                    <a href="/"><img src="./images/KinoMann-logo.png" alt="Логотип сайта Киноман" class="kinomann-logo"/></a>
+                </div>
+
+                <div class="social-media-wrap">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./images/insta.jpg" alt="Ссылка на Инстаграмм" class="insta-ref"/></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.jpg" alt="Ссылка на Фейсбук" class="facebook-ref"/></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="./images/youtube.jpg" alt="Ссылка на Ютуб" class="youtube-ref"/></a>
+                </div>
+
+            </div>
+        </footer>
+
+        <script src="scripts/sticky-navigation.js"></script>
+        <script src="scripts/carousel.js"></script>
+
+    </body>
+</html>

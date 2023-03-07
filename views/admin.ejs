@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Иконка сайта-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png"/>
+
+    <link href="/css/adminPage.css" rel="stylesheet" type="text/css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    
+    <title>Admin Page</title>
+</head>
+<body>
+    <div class="header">
+        <h1>- Редактирование -</h1>
+    </div>
+
+    <div class="exitLink"><a href="/login.html">Завершить сессию</a></div>
+
+    <div class="adminControls">
+        <div class="deleteItemForm">
+            <h2>Удаление</h2>
+
+            <form action="/adminPostDelete" method="POST">
+                <span>id</span>
+                <input type="text" placeholder="1" name="idInput"/>
+                <button type="submit" id="deleteBtn" name="deleteBtn">Удалить</button>
+            </form>
+            
+        </div>
+
+        <div class="addItemForm">
+            <h2>Добавление</h2>
+
+            <form action="/adminPostAdd" method="POST">
+                <span>name</span>
+                <input type="text" placeholder="Avatar" name="nameInput" required/>
+                
+                <span>price</span>
+                <input type="text" placeholder="1500" name="priceInput" required/>
+                
+                <span>imgName</span>
+                <input type="text" placeholder="avatar.jpg" name="imgNameInput" required/>
+
+                <button type="submit" id="addBtn" name="addBtn">Добавить</button>
+            </form>
+            
+        </div>
+
+        <div class="redactItemForm">
+            <h2>Редактирование</h2>
+
+            <form action="/adminPostRedact" method="POST">
+                <span>id</span>
+                <input type="text" placeholder="1" name="idInputRedact" required/>
+
+                <span>name</span>
+                <input type="text" placeholder="Avatar" name="nameInputRedact" required/>
+                
+                <span>price</span>
+                <input type="text" placeholder="1500" name="priceInputRedact" required/>
+                
+                <span>imgName</span>
+                <input type="text" placeholder="avatar.jpg" name="imgNameInputRedact" required/>
+
+                <button type="submit" id="addBtn" name="addBtn">Изменить</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <div class="adminTable">
+        <table>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>price</th>
+                <th>imgName</th>
+            </tr>
+
+            <% sampleData.forEach(function(data) { %> 
+                <tr>
+                    
+                    <td><%= data.id %> </td>
+                    <td><%= data.name %> </td>
+                    <td><%= data.price %> </td>
+                    <td><%= data.imgName %> </td>
+
+                </tr>
+            <% }) %>
+
+        </table>
+    </div>
+</body>
+</html>
